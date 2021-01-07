@@ -1,2 +1,1 @@
-# demo-starter
-初始化项目
+自定义spring-boot-starter
