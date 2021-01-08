@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * @author daixiaoyong
@@ -21,11 +20,10 @@ import org.springframework.context.annotation.Configuration;
  * @description 配置类
  */
 
-@Configuration
 @EnableConfigurationProperties(DemoProperties.class)
 @ConditionalOnProperty(
         prefix = "demo",
-        name = "isopen",
+        name = "isOpen",
         havingValue = "true"
 )
 public class DemoConfig {
